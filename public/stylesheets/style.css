@@ -41,6 +41,9 @@ ul {
 .unitRight {
   float: right;
 }
+.center {
+  text-align: center;
+}
 
 .item-block {
   border: 1px solid #ccc;

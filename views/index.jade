@@ -2,6 +2,7 @@ extends layout
 
 block content
   h1= title
+  p.center A fantastic place to buy bike stuff.
   ul
     each bike_src in bikes
       - price = Math.round(Math.random()*100)
