@@ -2,7 +2,9 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
   ul
     each bike_src in bikes
-      img(src='/images/bikes/'+bike_src)
+      - price = Math.round(Math.random()*100)
+      li.bike
+        img(src='/images/bikes/'+bike_src)
+        a.buy(href='/cart') Buy me! $#{price}
